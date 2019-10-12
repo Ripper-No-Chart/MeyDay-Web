@@ -4,7 +4,7 @@ $conn = mysqli_connect(
     'root',
     '',
     'interact_db'
-) or die ('Ha fallado la conexión: '.mysql_error());;
+) or die ("Ha fallado la conexión: ".mysql_error());;
 
 // $dbServerName = "213.190.6.85";
 // $dbUsername = "u972480107_user";
