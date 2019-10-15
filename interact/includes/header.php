@@ -1,20 +1,21 @@
   <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
               <ul class="navbar-nav mr-auto justify-content-around d-flex flex-fill">
                   <li class="nav-item active">
-                      <a href="index.php" class="navbar-brand">Interact</a>
+                      <a href="index.php" class="navbar-brand"><i class="fas fa-info"></i> Interact</a>
                   </li>
                   <li class="nav-item active">
-                      <a href="new_entry.php" class="navbar-brand">Nuevo registro <i class="fas fa-plus-square"></i></a>
+                      <a href="new_entry.php" class="navbar-brand"><i class="fas fa-plus-square"></i> Nuevo registro</a>
                   </li>
                   <li class="nav-item active">
-                      <a href="search.php" class="navbar-brand">Busqueda <i class="fas fa-search"></i></a>
+                      <a href="search.php" class="navbar-brand"><i class="fas fa-search"></i> Busqueda Individual</a>
                   </li>
                   <li class="nav-item active">
-                      <a href="#" class="navbar-brand">Informes <i class="fas fa-info"></i></a>
+                      <a href="reports.php" class="navbar-brand"><i class="fas fa-file-alt"></i> Informes</a>
                   </li>
-              </ul>
-          </div>
+                  <li class="nav-item active">
+                      <a href="#" class="navbar-brand"><i class="fas fa-dollar-sign"></i> Liquidaciones </a>
+                  </li>
+              </ul>          
       </nav>
   </header>

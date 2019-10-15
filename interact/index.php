@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<title>MeyDay Software - Intranet</title>
-<?php include('../includes/header.php') ?>
+
+<?php include('includes/extras.php') ?>
 
 <body>
     <main>
         <?php include('includes/header.php') ?>
         <section class="container mt-3 text-center text-primary">
             <h3>Interact</h3>
-            <h4>Sistema de Ventas de Obras sociales y Prepagas</h4>
+            <h4 class="text-info">Sistema de Ventas de Obras sociales y Prepagas</h4>
         </section>
     </main>
 
