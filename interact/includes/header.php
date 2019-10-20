@@ -9,12 +9,9 @@
                   </li>
                   <li class="nav-item active">
                       <a href="search.php" class="navbar-brand"><i class="fas fa-search"></i> Busqueda Individual</a>
-                  </li>
+                  </li>                  
                   <li class="nav-item active">
-                      <a href="reports.php" class="navbar-brand"><i class="fas fa-file-alt"></i> Informes</a>
-                  </li>
-                  <li class="nav-item active">
-                      <a href="#" class="navbar-brand"><i class="fas fa-dollar-sign"></i> Liquidaciones </a>
+                      <a href="settlements.php" class="navbar-brand"><i class="fas fa-dollar-sign"></i> Liquidaciones </a>
                   </li>
               </ul>          
       </nav>

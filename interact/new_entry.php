@@ -14,14 +14,14 @@
                         <div class="lead">Datos del afiliado</div>
                     </div>
                     <div class="card-body">
-                        <input name="apellido" type="text" class="form-control" placeholder="Apellido">
-                        <input name="nombre" type="text" class="form-control mt-2" placeholder="Nombre">
-                        <input name="dni" type="text" class="form-control mt-2" placeholder="DNI">
-                        <input name="cuil" type="text" class="form-control mt-2" placeholder="CUIL">
-                        <input name="domicilio" type="text" class="form-control mt-2" placeholder="Domicilio">
-                        <input name="localidad" type="text" class="form-control mt-2" placeholder="Localidad">
-                        <input name="telefono1" type="text" class="form-control mt-2" placeholder="Telefono 1">
-                        <input name="telefono2" type="text" class="form-control mt-2" placeholder="Telefono 2">
+                        <input name="apellido" type="text" class="form-control" placeholder="Apellido" required>
+                        <input name="nombre" type="text" class="form-control mt-2" placeholder="Nombre" required>
+                        <input name="dni" type="text" class="form-control mt-2" placeholder="DNI" required>
+                        <input name="cuil" type="text" class="form-control mt-2" placeholder="CUIL" required>
+                        <input name="domicilio" type="text" class="form-control mt-2" placeholder="Domicilio" required>
+                        <input name="localidad" type="text" class="form-control mt-2" placeholder="Localidad" required>
+                        <input name="telefono1" type="text" class="form-control mt-2" placeholder="Telefono 1" required>
+                        <input name="telefono2" type="text" class="form-control mt-2" placeholder="Telefono 2" required>
                     </div>
                 </div>
                 <div class="card mt-3">
@@ -29,14 +29,14 @@
                         <div class="lead">Datos del Plan</div>
                     </div>
                     <div class="card-body">
-                        <input name="formulario" type="text" class="form-control" placeholder="Formulario">
-                        <input name="plan" type="text" class="form-control mt-2" placeholder="Plan">
-                        <input name="tipo" type="text" class="form-control mt-2" placeholder="Tipo">
-                        <input name="valor" type="text" class="form-control mt-2" placeholder="Valor">
-                        <input name="aporte" type="text" class="form-control mt-2" placeholder="Aporte">
-                        <input name="ecuacion" type="text" class="form-control mt-2" placeholder="Ecuacion">
-                        <input name="diferencia" type="text" class="form-control mt-2" placeholder="Diferencia">
-                        <input placeholder="Fecha de pago diferencia" class="textbox-n form-control mt-2" type="text" onfocus="(this.type='date')" name="f_diferencia">
+                        <input name="formulario" type="text" class="form-control" placeholder="Formulario" required>
+                        <input name="plan" type="text" class="form-control mt-2" placeholder="Plan" required>
+                        <input name="tipo" type="text" class="form-control mt-2" placeholder="Tipo" required>
+                        <input name="valor" type="text" class="form-control mt-2" placeholder="Valor" required>
+                        <input name="aporte" type="text" class="form-control mt-2" placeholder="Aporte" required>
+                        <input name="ecuacion" type="text" class="form-control mt-2" placeholder="Ecuacion" required>
+                        <input name="diferencia" type="text" class="form-control mt-2" placeholder="Diferencia" required>
+                        <input placeholder="Fecha de pago diferencia" class="textbox-n form-control mt-2" type="text" onfocus="(this.type='date')" name="f_diferencia" required>
                     </div>
                 </div>
                 <div class="card mt-3">
@@ -44,10 +44,10 @@
                         <div class="lead">Fechas</div>
                     </div>
                     <div class="card-body">
-                        <input placeholder="Fecha de firma" class="textbox-n form-control mt-2" type="text" onfocus="(this.type='date')" name="f_firma">
-                        <input placeholder="Fecha de presentacion" class="textbox-n form-control mt-2" type="text" onfocus="(this.type='date')" name="f_presentacion">
-                        <input placeholder="Fecha de liquidacion" class="textbox-n form-control mt-2" type="text" onfocus="(this.type='date')" name="f_liquidacion">
-                        <textarea name="observaciones" placeholder="Observaciones" class="form-control noresize mt-2" style="resize:none"></textarea>
+                        <input placeholder="Fecha de firma" class="textbox-n form-control mt-2" type="text" onfocus="(this.type='date')" name="f_firma" required>
+                        <input placeholder="Fecha de presentacion" class="textbox-n form-control mt-2" type="text" onfocus="(this.type='date')" name="f_presentacion" required>
+                        <input placeholder="Fecha de liquidacion" class="textbox-n form-control mt-2" type="text" onfocus="(this.type='date')" name="f_liquidacion" required>
+                        <textarea name="observaciones" placeholder="Observaciones" class="form-control noresize mt-2" style="resize:none" required></textarea>
                     </div>
                 </div>
                 <div class="row mt-2">
