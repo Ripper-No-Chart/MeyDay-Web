@@ -11,7 +11,10 @@
                       <a href="search.php" class="navbar-brand"><i class="fas fa-search"></i> Busqueda Individual</a>
                   </li>                  
                   <li class="nav-item active">
-                      <a href="settlements.php" class="navbar-brand"><i class="fas fa-dollar-sign"></i> Liquidaciones </a>
+                      <a href="settlements.php" class="navbar-brand"><i class="fas fa-dollar-sign"></i> Liquidaciones</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a href="summary.php" class="navbar-brand"><i class="fas fa-poll"></i> Resumen</a>
                   </li>
               </ul>          
       </nav>
