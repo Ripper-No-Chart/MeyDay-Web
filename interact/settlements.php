@@ -19,29 +19,9 @@
                         <input name="fecha" type="date" class="form-control mt-2" placeholder="Fecha" required>
                         <textarea name="observaciones" placeholder="Observaciones" class="form-control noresize mt-2" style="resize:none" required></textarea>
                         <input name="guardar" type="submit" class="form-control btn btn-success mt-2" value="Guardar">
-                        <?php
-                        if (isset($_POST['guardar'])) {
-                            $idsocio = $_POST['idsocio'];
-                            $importe = $_POST['importe'];
-                            $fecha = $_POST['fecha'];
-                            $observaciones = $_POST['observaciones'];
-                            $sql = "INSERT INTO `liquidaciones`(`IdSocio`, `Importe`, `Fecha`, `Observaciones`) " .
-                                "VALUES ('$idsocio','$importe','$fecha','$observaciones')";
-                            $result = mysqli_query($conn, $sql);
-                            if ($result) {
-                                ?>
-                                <script src="alert_success.js"></script>
-                            <?php
-                                } else {
-                                    ?>
-                                <script src="alert_failure.js"></script>
-                        <?php
-                            }
-                            mysqli_close($conn);
-                        };
-                        ?>
                     </div>
                 </div>
+                <?php include('settlements_query.php'); ?>
             </form>
         </section>
     </main>
