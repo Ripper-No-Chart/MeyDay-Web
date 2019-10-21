@@ -27,7 +27,7 @@
                             LEFT JOIN liquidaciones ON (registros.id = liquidaciones.idSocio)                            
                             WHERE liquidaciones.Fecha BETWEEN '{$fechadesde}' AND ' {$fechahasta}'";
                             $result = mysqli_query($conn, $sql);
-                            if ($result) {
+                            if (mysqli_num_rows($result)) {                                
                                 ?>
                                 <table class="table table-striped table-active mt-5 table-responsive">
                                     <thead class="thead-dark">
@@ -65,10 +65,7 @@
                 <?php
                     } else {
                         ?>
-                    <script type="text/javascript">
-                        var msg = alertify.error('');
-                        msg.delay(2).setContent('No se encontraron datos');
-                    </script>
+                        <script src="alert_failure.js"></script>                    
             <?php
                 }
                 mysqli_close($conn);

@@ -63,12 +63,9 @@
                                     </script>
                                 </tr> <?php }; ?>
                         <?php
-                            } else {
-                                echo "<script type='text/javascript'>
-                                                var msg = alertify.error('');
-                                                msg.delay(2).setContent('No se encontraron datos.');
-                                            </script>";
-                            }; ?>
+                            } else { ?>
+                                <script src="alert_failure.js"></script>                                                    
+                            <?php }; ?>
                         </tbody>
                     </table>
                 <?php mysqli_close($conn);

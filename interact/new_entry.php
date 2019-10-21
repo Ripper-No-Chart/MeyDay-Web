@@ -82,23 +82,17 @@
                             $result = mysqli_query($conn, $sql);
                             if ($result) {
                                 ?>
-                                <script type="text/javascript">
-                                    var msg = alertify.success('');
-                                    msg.delay(2).setContent('Guardado con exito');
-                                </script>
+                                <script src="alert_success.js"></script>
                             <?php
                                 } else {
                                     ?>
-                                <script type="text/javascript">
-                                    var msg = alertify.error('');
-                                    msg.delay(2).setContent('Error al guardar.');
-                                </script>
+                                <script src="alert_failure.js"></script>
                         <?php
                             }
                             mysqli_close($conn);
                         };
                         ?>
-                    </div>                    
+                    </div>
                 </div>
             </form>
         </section>

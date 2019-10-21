@@ -26,10 +26,7 @@
                 header('Location: index.php');
               } else {
                 ?>
-                <script type="text/javascript">
-                  var msg = alertify.error('');
-                  msg.delay(2).setContent('Credenciales no validas.');
-                </script>
+                <script src="alert_failure.js"></script>                    
             <?php };
             }
             mysqli_close($conn); ?>
