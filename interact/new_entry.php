@@ -10,7 +10,7 @@
         <section class="container mt-3">
             <form action="#" method="POST">
                 <div class="card">
-                    <div class="card-header bg-info text-white text-center">
+                    <div class="card-header bg-success text-white text-center">
                         <div class="lead">Datos del afiliado</div>
                     </div>
                     <div class="card-body">
@@ -31,7 +31,12 @@
                     <div class="card-body">
                         <input name="formulario" type="text" class="form-control" placeholder="Formulario" required>
                         <input name="plan" type="text" class="form-control mt-2" placeholder="Plan" required>
-                        <input name="tipo" type="text" class="form-control mt-2" placeholder="Tipo" required>
+                        <select class="form-control mt-2" name="tipo">
+                            <option value="" disabled selected>Tipo de plan</option>
+                            <option value="Desregulado">Desregulado</option>
+                            <option value="Directo">Directo</option>
+                            <option value="Superador">Superador</option>
+                        </select>
                         <input name="valor" type="text" class="form-control mt-2" placeholder="Valor" required>
                         <input name="aporte" type="text" class="form-control mt-2" placeholder="Aporte" required>
                         <input name="ecuacion" type="text" class="form-control mt-2" placeholder="Ecuacion" required>
@@ -52,7 +57,7 @@
                 </div>
                 <div class="row mt-2">
                     <div class="col-12">
-                        <input type="submit" name="guardar" class="btn btn-block btn-primary text-white mb-3" value="Guardar">                        
+                        <input type="submit" name="guardar" class="btn btn-block btn-info text-white mb-3" value="Guardar">
                         <?php include('new_entry_query.php'); ?>
                     </div>
                 </div>

@@ -1,8 +1,8 @@
 <?php
-$sql = "SELECT Apellido, Nombre, IF(Tipo = 'Desregulado',Ecuacion * 2,Ecuacion) AS Ecuacion, F_Liquidacion AS Ecu_Fecha, Diferencia, F_Diferencia AS Dif_Fecha FROM registros WHERE F_Liquidacion > CAST(CURRENT_TIMESTAMP AS DATE);";
+$sql = "SELECT Apellido, Nombre, IF(Tipo = 'Desregulado',Ecuacion * 2,Ecuacion) AS Ecuacion, F_Liquidacion AS Ecu_Fecha, Diferencia, F_Diferencia AS Dif_Fecha FROM registros WHERE F_Liquidacion >= CAST(CURRENT_TIMESTAMP AS DATE);";
 $result = mysqli_query($conn, $sql);
 if ($result->num_rows > 0) {
-    echo "<table class='table table-striped table-active table-responsive' id='tableMain'>";
+    echo "<table class='table table-striped table-active table-responsive'>";
     echo "<thead class='thead-dark'>";
     echo "<tr>";
     echo "<th class='text-center' scope='col'>Apellido</th>";
@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
 };
 echo "</tbody>";
 echo "</table>";
-$sql = "SELECT SUM(Ecuacion) AS Total_Ecu, SUM(Diferencia) AS Total_Dif FROM registros WHERE F_Liquidacion > CAST(CURRENT_TIMESTAMP AS DATE);";
+$sql = "SELECT SUM(Ecuacion) AS Total_Ecu, SUM(Diferencia) AS Total_Dif FROM registros WHERE F_Liquidacion >= CAST(CURRENT_TIMESTAMP AS DATE);";
 $result = mysqli_query($conn, $sql);
 if ($result) {
     while ($row = $result->fetch_array()) {

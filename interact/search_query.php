@@ -2,11 +2,7 @@
 if (isset($_POST["buscar"])) {
     $campo = $_POST["campo"];
     $parametro = $_POST["parametro"];
-    if ($campo != '') {
-        $sql = "SELECT Id, Apellido, Nombre FROM registros WHERE " . $parametro . " = '$campo'";
-    } else {
-        $sql = "SELECT Id, Apellido, Nombre FROM registros";
-    };
+    $sql = "SELECT Id, Apellido, Nombre FROM registros WHERE " . $parametro . " = '$campo'";    
     $result = mysqli_query($conn, $sql);
     if ($result->num_rows > 0) {
         echo "<table class='table table-striped table-active' id='tableMain'>";
